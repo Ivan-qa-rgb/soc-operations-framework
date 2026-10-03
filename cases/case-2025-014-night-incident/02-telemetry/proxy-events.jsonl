@@ -1,0 +1,7 @@
+{"ts":"2025-01-15T01:07:33Z","user":"d.petrov","src_ip":"203.0.113.41","url":"https://idp.synthetic.example/sso","bytes_in":12440,"bytes_out":2100,"method":"GET","action":"allow"}
+{"ts":"2025-01-15T03:20:11Z","user":"d.petrov","src_ip":"198.51.100.88","url":"https://api.synthetic.example/v1/accounts","bytes_in":41200,"bytes_out":900,"method":"GET","action":"allow"}
+{"ts":"2025-01-15T03:21:02Z","user":"d.petrov","src_ip":"198.51.100.88","url":"https://api.synthetic.example/v1/accounts","bytes_in":52130,"bytes_out":880,"method":"GET","action":"allow"}
+{"ts":"2025-01-15T03:22:18Z","user":"d.petrov","src_ip":"198.51.100.88","url":"https://api.synthetic.example/v1/transactions/export?range=last_90d","bytes_in":204800,"bytes_out":750,"method":"GET","action":"allow"}
+{"ts":"2025-01-15T03:24:02Z","user":"d.petrov","src_ip":"10.20.30.47","host":"PAY-WKS-07","url":"https://uploads.synthetic.example/put","bytes_in":900,"bytes_out":1030792151,"method":"PUT","action":"allow"}
+{"ts":"2025-01-15T03:31:12Z","user":"d.petrov","src_ip":"10.20.30.47","host":"PAY-WKS-07","url":"https://pastebin.synthetic.example/api/v1/post","bytes_in":900,"bytes_out":5300,"method":"POST","action":"allow"}
+{"ts":"2025-01-15T04:05:00Z","user":"m.orlov","src_ip":"203.0.113.61","url":"https://git.synthetic.example/","bytes_in":12000,"bytes_out":300,"method":"GET","action":"allow"}
