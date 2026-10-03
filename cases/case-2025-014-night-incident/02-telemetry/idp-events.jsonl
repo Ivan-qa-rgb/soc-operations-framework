@@ -1,0 +1,10 @@
+{"ts":"2025-01-14T22:40:11Z","user":"d.petrov","src_ip":"203.0.113.41","geo":"SynthCity-A","asn":"AS64500","outcome":"success","mfa":"session_cookie_reuse","mfa_challenge_issued":false,"app":"SynthPay-Admin"}
+{"ts":"2025-01-15T01:05:12Z","user":"d.petrov","src_ip":"203.0.113.41","geo":"SynthCity-A","asn":"AS64500","outcome":"success","mfa":"session_cookie_reuse","mfa_challenge_issued":false,"app":"SynthPay-Backoffice"}
+{"ts":"2025-01-15T03:17:02Z","user":"d.petrov","src_ip":"198.51.100.88","geo":"SynthCity-B","asn":"AS64511","outcome":"success","mfa":"push_approved","mfa_challenge_issued":true,"app":"SynthPay-Admin"}
+{"ts":"2025-01-15T03:17:33Z","user":"d.petrov","src_ip":"198.51.100.88","geo":"SynthCity-B","asn":"AS64511","outcome":"success","mfa":"session_cookie_reuse","mfa_challenge_issued":false,"app":"SynthPay-Admin"}
+{"ts":"2025-01-15T03:18:10Z","user":"d.petrov","src_ip":"198.51.100.88","geo":"SynthCity-B","asn":"AS64511","outcome":"success","mfa":"session_cookie_reuse","mfa_challenge_issued":false,"app":"SynthPay-Admin"}
+{"ts":"2025-01-15T03:20:00Z","user":"a.sidorova","src_ip":"203.0.113.50","geo":"SynthCity-A","asn":"AS64500","outcome":"success","mfa":"push_approved","mfa_challenge_issued":true,"app":"SynthPay-Backoffice"}
+{"ts":"2025-01-15T03:22:45Z","user":"d.petrov","src_ip":"198.51.100.88","geo":"SynthCity-B","asn":"AS64511","outcome":"success","mfa":"session_cookie_reuse","mfa_challenge_issued":false,"app":"SynthPay-Admin"}
+{"ts":"2025-01-15T03:35:02Z","user":"m.orlov","src_ip":"203.0.113.61","geo":"SynthCity-A","asn":"AS64500","outcome":"success","mfa":"push_approved","mfa_challenge_issued":true,"app":"SynthPay-Backoffice"}
+{"ts":"2025-01-15T04:02:14Z","user":"d.petrov","src_ip":"198.51.100.88","geo":"SynthCity-B","asn":"AS64511","outcome":"success","mfa":"session_cookie_reuse","mfa_challenge_issued":false,"app":"SynthPay-Admin"}
+{"ts":"2025-01-15T04:15:33Z","user":"d.petrov","src_ip":"198.51.100.88","geo":"SynthCity-B","asn":"AS64511","outcome":"success","mfa":"session_cookie_reuse","mfa_challenge_issued":false,"app":"SynthPay-Admin"}
