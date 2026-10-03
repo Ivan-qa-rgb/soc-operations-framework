@@ -1,0 +1,36 @@
+{
+  "alert_id": "SYNTH-ALERT-0002",
+  "source": "idp",
+  "rule": "impossible_travel_synthetic",
+  "rule_severity": "medium",
+  "ts": "2025-01-15T03:17:41Z",
+  "user": "d.petrov",
+  "events": [
+    {
+      "ts": "2025-01-15T01:05:12Z",
+      "src_ip": "203.0.113.41",
+      "geo": "SynthCity-A",
+      "asn": "AS64500",
+      "outcome": "success",
+      "mfa": "session_cookie_reuse",
+      "mfa_challenge_issued": false,
+      "app": "SynthPay-Backoffice",
+      "agent": "Chrome/131.0 (SynthOS)"
+    },
+    {
+      "ts": "2025-01-15T03:17:02Z",
+      "src_ip": "198.51.100.88",
+      "geo": "SynthCity-B",
+      "asn": "AS64511",
+      "outcome": "success",
+      "mfa": "push_approved",
+      "mfa_challenge_issued": true,
+      "app": "SynthPay-Admin",
+      "agent": "Chrome/131.0 (SynthOS)"
+    }
+  ],
+  "distance_km": 8700,
+  "travel_time_possible": false,
+  "confidence": "high",
+  "analyst_note": "First suspicious login used MFA push approval; subsequent logins may use session or refresh token reuse."
+}
