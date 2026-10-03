@@ -1,0 +1,53 @@
+title: LSASS Memory Access from Non-Standard Parent (Synthetic)
+id: 4d5e6f70-1a2b-4c3d-9e0f-5a6b7c8d9e0f
+status: experimental
+description: >
+  Detects suspicious access to lsass.exe from a non-standard parent process.
+  Synthetic rule for training case CASE-2025-014.
+references:
+  - https://attack.mitre.org/techniques/T1003/001/
+author: SOC Operations Framework
+date: 2025/01/20
+tags:
+  - attack.credential_access
+  - attack.t1003.001
+logsource:
+  product: windows
+  service: sysmon
+detection:
+  selection_target:
+    EventID: 10
+    TargetImage|endswith: '\lsass.exe'
+  selection_access:
+    GrantedAccess:
+      - '0x1010'
+      - '0x1410'
+      - '0x1438'
+      - '0x143a'
+      - '0x1fffff'
+  selection_suspicious_parent:
+    SourceImage|endswith:
+      - '\agent.exe'
+      - '\updater.exe'
+      - '\update.exe'
+      - '\synthagent.exe'
+  filter_known_security:
+    SourceImage|endswith:
+      - '\msmpeng.exe'
+      - '\windefend.exe'
+      - '\csrss.exe'
+      - '\taskmgr.exe'
+      - '\procexp.exe'
+      - '\procmon64.exe'
+  condition: selection_target and selection_access and selection_suspicious_parent and not filter_known_security
+fields:
+  - EventID
+  - SourceImage
+  - TargetImage
+  - GrantedAccess
+  - User
+  - SourceCommandLine
+falsepositives:
+  - Legitimate endpoint agents with documented LSASS inspection capability
+  - Security tooling and EDR diagnostics
+level: high
