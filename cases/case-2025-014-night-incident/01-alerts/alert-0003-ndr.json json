@@ -1,0 +1,24 @@
+{
+  "alert_id": "SYNTH-ALERT-0003",
+  "source": "ndr",
+  "rule": "large_outbound_transfer",
+  "rule_severity": "medium",
+  "ts": "2025-01-15T03:24:19Z",
+  "src_host": "PAY-WKS-07",
+  "src_ip": "10.20.30.47",
+  "src_user": "d.petrov",
+  "dst": {
+    "ip": "192.0.2.77",
+    "port": 443,
+    "sni": "uploads.synthetic.example",
+    "asn": "AS64510",
+    "geo": "SynthCity-C"
+  },
+  "bytes_out": 1030792151,
+  "duration_sec": 312,
+  "protocol": "TLS 1.3",
+  "http_method": "PUT",
+  "baseline_anomaly": "above P99 for host and destination class",
+  "confidence": "medium",
+  "analyst_note": "Suspicious in isolation; high-confidence exfiltration after correlation with transaction export and LSASS access."
+}
