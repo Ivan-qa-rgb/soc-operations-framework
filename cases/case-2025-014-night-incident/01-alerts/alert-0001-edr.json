@@ -1,0 +1,28 @@
+{
+  "alert_id": "SYNTH-ALERT-0001",
+  "source": "edr",
+  "rule": "suspicious_lsass_access",
+  "rule_severity": "high",
+  "ts": "2025-01-15T03:12:04Z",
+  "host": "PAY-WKS-07",
+  "host_owner": "d.petrov",
+  "process": {
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "pid": 4212,
+    "ppid": 1180,
+    "parent_image": "C:\\Program Files\\SynthAgent\\agent.exe",
+    "command_line": "powershell.exe -NoP -NonI -W Hidden -Enc JABjAG0AZAA9ACgARwBlAHQALQBXAG0AaQBPAF..."
+  },
+  "target_process": {
+    "image": "C:\\Windows\\System32\\lsass.exe",
+    "pid": 704,
+    "granted_access": "0x1010"
+  },
+  "caller_user": "NT AUTHORITY\\SYSTEM",
+  "labels": [
+    "defense_evasion",
+    "credential_access"
+  ],
+  "confidence": "medium",
+  "analyst_note": "SYSTEM context requires validation: possible service context, token manipulation, or telemetry attribution issue."
+}
