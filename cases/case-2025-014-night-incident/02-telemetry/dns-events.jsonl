@@ -1,0 +1,9 @@
+{"ts":"2025-01-15T01:07:33Z","host":"PAY-WKS-07","client_ip":"10.20.30.47","query":"idp.synthetic.example","type":"A","rcode":"NOERROR"}
+{"ts":"2025-01-15T03:18:42Z","host":"PAY-WKS-07","client_ip":"10.20.30.47","query":"api.synthetic.example","type":"A","rcode":"NOERROR"}
+{"ts":"2025-01-15T03:19:58Z","host":"PAY-WKS-07","client_ip":"10.20.30.47","query":"uploads.synthetic.example","type":"A","rcode":"NOERROR"}
+{"ts":"2025-01-15T03:31:00Z","host":"PAY-WKS-07","client_ip":"10.20.30.47","query":"pastebin.synthetic.example","type":"A","rcode":"NOERROR"}
+{"ts":"2025-01-15T03:31:11Z","host":"PAY-WKS-07","client_ip":"10.20.30.47","query":"pastebin.synthetic.example","type":"A","rcode":"NOERROR"}
+{"ts":"2025-01-15T03:31:22Z","host":"PAY-WKS-07","client_ip":"10.20.30.47","query":"pastebin.synthetic.example","type":"A","rcode":"NOERROR"}
+{"ts":"2025-01-15T03:42:01Z","host":"PAY-WKS-07","client_ip":"10.20.30.47","query":"time.synthetic.example","type":"A","rcode":"NOERROR"}
+{"ts":"2025-01-15T04:02:10Z","host":"PAY-WKS-07","client_ip":"10.20.30.47","query":"ctfmon.synthetic.example","type":"A","rcode":"NOERROR"}
+{"ts":"2025-01-15T04:15:03Z","host":"PAY-WKS-07","client_ip":"10.20.30.47","query":"metric.synthetic.example","type":"A","rcode":"NOERROR"}
