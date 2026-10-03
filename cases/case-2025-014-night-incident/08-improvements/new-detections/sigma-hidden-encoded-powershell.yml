@@ -1,0 +1,33 @@
+title: Hidden Encoded PowerShell Execution (Synthetic)
+id: 5e6f7081-2b3c-4d4e-af0f-6b7c8d9e0f1a
+status: experimental
+description: >
+  Detects hidden PowerShell execution with encoded commands.
+  Synthetic rule for training case CASE-2025-014.
+author: SOC Operations Framework
+date: 2025/01/20
+tags:
+  - attack.execution
+  - attack.t1059.001
+  - attack.defense_evasion
+logsource:
+  product: windows
+  service: sysmon
+detection:
+  selection:
+    EventID: 1
+    Image|endswith: '\powershell.exe'
+    CommandLine|contains|all:
+      - '-nop'
+      - '-w'
+      - 'hidden'
+      - '-enc'
+  condition: selection
+fields:
+  - ParentImage
+  - Image
+  - CommandLine
+  - User
+falsepositives:
+  - Approved administrative automation
+level: high
