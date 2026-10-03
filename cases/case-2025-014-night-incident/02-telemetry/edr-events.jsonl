@@ -1,0 +1,11 @@
+{"ts":"2025-01-15T02:58:11Z","host":"PAY-WKS-07","user":"d.petrov","kind":"proc_start","image":"C:\\Program Files\\SynthAgent\\agent.exe","pid":1180,"ppid":900,"cmd":""}
+{"ts":"2025-01-15T02:58:14Z","host":"PAY-WKS-07","user":"d.petrov","kind":"proc_start","image":"C:\\Windows\\System32\\cmd.exe","pid":2233,"ppid":1180,"cmd":"/c ver"}
+{"ts":"2025-01-15T03:04:02Z","host":"PAY-WKS-07","user":"d.petrov","kind":"proc_start","image":"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe","pid":3555,"ppid":1180,"cmd":"-NoP -NonI -W Hidden -Enc JABzAD0ATgBlAHcALQBPAGIAagBlAGMAdAAgAEkATwAuAE0A..."}
+{"ts":"2025-01-15T03:11:52Z","host":"PAY-WKS-07","user":"d.petrov","kind":"proc_start","image":"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe","pid":4212,"ppid":1180,"cmd":"-NoP -NonI -W Hidden -Enc JABjAG0AZAA9ACgARwBlAHQALQBXAG0AaQBPAF..."}
+{"ts":"2025-01-15T03:12:04Z","host":"PAY-WKS-07","user":"NT AUTHORITY\\SYSTEM","kind":"lsass_access","caller_pid":4212,"target_pid":704,"granted_access":"0x1010"}
+{"ts":"2025-01-15T03:12:37Z","host":"PAY-WKS-07","user":"d.petrov","kind":"proc_start","image":"C:\\Windows\\System32\\wermgr.exe","pid":5010,"ppid":4212,"cmd":"-manual"}
+{"ts":"2025-01-15T03:23:41Z","host":"PAY-WKS-07","user":"d.petrov","kind":"file_write","path":"C:\\Users\\d.petrov\\AppData\\Local\\Temp\\cache.bin","size_bytes":1030792151}
+{"ts":"2025-01-15T03:24:02Z","host":"PAY-WKS-07","user":"d.petrov","kind":"net_out","src_ip":"10.20.30.47","dst_ip":"192.0.2.77","dst_port":443,"sni":"uploads.synthetic.example","bytes_out":1030792151}
+{"ts":"2025-01-15T03:31:50Z","host":"PAY-WKS-07","user":"d.petrov","kind":"proc_start","image":"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe","pid":6301,"ppid":1180,"cmd":"-NoP -NonI -W Hidden -Enc JAB3AGgAbwBhAG0AaQA..."}
+{"ts":"2025-01-15T04:02:13Z","host":"PAY-WKS-07","user":"d.petrov","kind":"proc_start","image":"C:\\Windows\\System32\\ctfmon.exe","pid":7001,"ppid":1180,"cmd":""}
+{"ts":"2025-01-15T04:15:00Z","host":"PAY-WKS-07","user":"d.petrov","kind":"session_idle","minutes":45}
